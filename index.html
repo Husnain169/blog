@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content1,.content2,.content3{
+    background-color: #999999;
+}
+.span{
+    color: white;
+    font-weight: bold;
+}
+#span1{
+    background-color: #D59897;
+}
+#span2{
+    background-color: #C14543;
+}
+#span3{
+    background-color: #E5D197;
+}
+
+@media screen and (min-width:992px){
+.main-container{
+    width: 100%;
+    margin: auto;
+}
+.main-heading{
+    text-align: center;
+}
+.content-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-wrap: nowrap;
+}
+.content1,.content2,.content3{
+    border: 2px solid #060606;
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+    /* float: left; */
+}
+.span{
+    border: 2px solid #060606;
+    float: right;
+    position: relative;
+    top: -12px;
+    right: -12px;
+    padding: 3px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+}
+
+@media only screen and (min-width:768px) and (max-width:991px){
+    .main-container{
+        width: 100%;
+        margin: auto;
+    }
+    .main-heading{
+        text-align: center;
+    }
+    .content-main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        flex-wrap: wrap;
+    }
+    .content1,.content2{
+        border: 2px solid #060606;
+        width: 44%;
+        margin: 10px;
+        padding: 10px;
+    }
+    .content3{
+        border: 2px solid #060606;
+        width: 92.6%;
+        margin: 10px;
+        padding: 10px;
+    }
+    .span{
+        border: 2px solid #060606;
+        float: right;
+        position: relative;
+        top: -12px;
+        right: -12px;
+        padding: 3px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+@media only screen and (max-width:767px){
+    .main-container{
+        width: 100%;
+        margin: auto;
+    }
+    .main-heading{
+        text-align: center;
+    }
+    .content-main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        flex-wrap: wrap;
+    }
+    .content1,.content2{
+        border: 2px solid #060606;
+        width: 100%;
+        margin: 10px;
+        padding: 10px;
+        /* float: left; */
+    }
+    .content3{
+        border: 2px solid #060606;
+        width: 100%;
+        margin: 10px;
+        padding: 10px;
+        /* float: left; */
+    }
+    .span{
+        border: 2px solid #060606;
+        float: right;
+        position: relative;
+        top: -12px;
+        right: -12px;
+        padding: 3px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="main-heading">
+            <h1>Our menu</h1>
+        </div>
+        <div class="content-main">
+            <div class="content1">
+                <span class="span" id="span1">Chicken</span>
+                <br>
+                <p>lorem ipsum dolar sit omet, concectutre adipiscing elit, sed doeiusmod tempor
+                    incididunt ut labour et labore dolore alique. Ut enim ad minim vaniam, quis
+                    nostured exertitation uttamco laboris nisi ut aliquip ex eo commondo consiquat</p>
+            </div>
+            <div class="content2">
+                <span class="span" id="span2">Beef</span>
+                <br>
+                <p>lorem ipsum dolar sit omet, concectutre adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labour et labore dolore alique. Ut enim ad minim vaniam, quis
+                    nostured exertitation uttamco laboris nisi ut aliquip ex eo commondo consiquat</p>
+            </div>
+            <div class="content3">
+                <span class="span" id="span3">Sushi</span>
+                <br>
+                <p>lorem ipsum dolar sit omet, concectutre adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labour et labore dolore alique. Ut enim ad minim vaniam, quis
+                    nostured exertitation uttamco laboris nisi ut aliquip ex eo commondo consiquat</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
